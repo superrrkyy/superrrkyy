@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120">
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop offset="0" stop-color="#24243e"/><stop offset=".5" stop-color="#302b63"/><stop offset="1" stop-color="#0f0c29"/></linearGradient></defs>
+  <path fill="url(#bg)" d="M0 40 Q150 0 300 35 T600 35 T900 35 T1200 30 V120 H0Z">
+    <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0 40 Q150 0 300 35 T600 35 T900 35 T1200 30 V120 H0Z;M0 30 Q150 60 300 30 T600 40 T900 25 T1200 40 V120 H0Z;M0 40 Q150 0 300 35 T600 35 T900 35 T1200 30 V120 H0Z"/>
+  </path>
+  <text x="600" y="90" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="20" fill="#c4b5fd">Terus belajar, terus membangun ✨</text>
+</svg>
