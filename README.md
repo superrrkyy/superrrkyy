@@ -79,7 +79,7 @@
 <p align="center">
   <a href="mailto:iranassalam@gmail.com"><img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=a78bfa" /></a>
   <a href="https://instagram.com/superryinz"><img src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=a78bfa" /></a>
-  <a href="https://t.me/muslihinhasan"><img src="https://img.shields.io/badge/Telegram-0d1117?style=for-the-badge&logo=telegram&logoColor=a78bfa" /></a>
+  <a href="https://t.me/hasanmuslihat"><img src="https://img.shields.io/badge/Telegram-0d1117?style=for-the-badge&logo=telegram&logoColor=a78bfa" /></a>
 </p>
 
 <p align="center">
