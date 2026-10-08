@@ -47,7 +47,7 @@ Suka membuat website, bot WhatsApp/Telegram, API, dan panduan belajar coding unt
 
 ### 📫 Kontak
 <!-- Ganti dengan kontak aslimu, hapus yang tidak dipakai -->
-- 📧 Email: `emailkamu@example.com`
-- 💬 Instagram / Telegram: `@username`
+- 📧 Email: `iranassalam@gmail.com`
+- 💬 Instagram / Telegram: `@superryinz`
 
 <p align="center"><i>"Terus belajar, terus membangun." ✨</i></p>
