@@ -1,7 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120">
-  <defs><linearGradient id="bg" x1="0" x2="1"><stop offset="0" stop-color="#24243e"/><stop offset=".5" stop-color="#302b63"/><stop offset="1" stop-color="#0f0c29"/></linearGradient></defs>
-  <path fill="url(#bg)" d="M0 40 Q150 0 300 35 T600 35 T900 35 T1200 30 V120 H0Z">
-    <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0 40 Q150 0 300 35 T600 35 T900 35 T1200 30 V120 H0Z;M0 30 Q150 60 300 30 T600 40 T900 25 T1200 40 V120 H0Z;M0 40 Q150 0 300 35 T600 35 T900 35 T1200 30 V120 H0Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/><stop offset=".35" stop-color="#0f0c29"/><stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" x2="1">
+      <stop offset="0" stop-color="#c4b5fd"/><stop offset=".5" stop-color="#ffffff"/><stop offset="1" stop-color="#67e8f9"/>
+      <animate attributeName="x1" values="-1;1" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;2" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="w1" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <radialGradient id="moon"><stop offset="0" stop-color="#fef9c3"/><stop offset=".6" stop-color="#fde68a"/><stop offset="1" stop-color="#fde68a" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="300" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#fff">
+    <circle cx="90" cy="90" r="1.4"><animate attributeName="opacity" values="1;.2;1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="240" cy="60" r="1"><animate attributeName="opacity" values=".2;1;.2" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="380" cy="110" r="1.3"><animate attributeName="opacity" values="1;.3;1" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="70" r="1"/><circle cx="700" cy="95" r="1.2"><animate attributeName="opacity" values=".3;1;.3" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="840" cy="60" r="1.5"><animate attributeName="opacity" values="1;.2;1" dur="4.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1120" cy="100" r="1.1"/><circle cx="960" cy="120" r="1"><animate attributeName="opacity" values=".2;1;.2" dur="2.9s" repeatCount="indefinite"/></circle>
+  </g>
+  <!-- shooting star -->
+  <line x1="0" y1="0" x2="60" y2="20" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0">
+    <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;.05;.12;1" dur="7s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="150 20;470 70;470 70" keyTimes="0;.12;1" dur="7s" repeatCount="indefinite"/>
+  </line>
+  <!-- moon -->
+  <circle cx="1060" cy="80" r="40" fill="url(#moon)" opacity=".9"/>
+
+  <text x="600" y="120" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="40" font-weight="800" fill="url(#txt)">Terima kasih sudah berkunjung!</text>
+  <text x="600" y="158" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="18" fill="#a5b4fc" letter-spacing="3">✦ TERUS BELAJAR • TERUS MEMBANGUN ✦</text>
+
+  <!-- waves -->
+  <path fill="url(#w1)" opacity=".35" d="M0 220 Q150 190 300 220 T600 220 T900 220 T1200 215 V300 H0Z">
+    <animate attributeName="d" dur="9s" repeatCount="indefinite" values="M0 220 Q150 190 300 220 T600 220 T900 220 T1200 215 V300 H0Z;M0 210 Q150 245 300 215 T600 225 T900 205 T1200 225 V300 H0Z;M0 220 Q150 190 300 220 T600 220 T900 220 T1200 215 V300 H0Z"/>
   </path>
-  <text x="600" y="90" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="20" fill="#c4b5fd">Terus belajar, terus membangun ✨</text>
+  <path fill="#302b63" d="M0 245 Q150 220 300 245 T600 245 T900 245 T1200 240 V300 H0Z">
+    <animate attributeName="d" dur="7s" repeatCount="indefinite" values="M0 245 Q150 220 300 245 T600 245 T900 245 T1200 240 V300 H0Z;M0 240 Q150 265 300 240 T600 250 T900 235 T1200 250 V300 H0Z;M0 245 Q150 220 300 245 T600 245 T900 245 T1200 240 V300 H0Z"/>
+  </path>
+  <text x="600" y="282" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="14" fill="#c4b5fd" opacity=".8">© AXRYZURE • Made with 💜 in Indonesia 🇮🇩</text>
 </svg>
