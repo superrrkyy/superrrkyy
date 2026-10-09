@@ -1,0 +1,63 @@
+name: Update Dashboard
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # dashboard & jam: setiap 5 menit
+  workflow_dispatch:         # bisa dijalankan manual dari tab Actions
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dashboard
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Ambil file lama (animasi ular) supaya tidak hilang
+      - name: Ambil output sebelumnya
+        run: |
+          mkdir -p out
+          for f in snake-dark.svg snake.svg; do
+            curl -sfL "https://raw.githubusercontent.com/${{ github.repository }}/output/$f" -o "out/$f" || rm -f "out/$f"
+          done
+
+      - name: Buat dashboard
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: python3 scripts/dashboard.py
+
+      # Animasi ular cukup diperbarui sekali sehari (atau saat dijalankan manual / ada push)
+      - name: Cek perlu update ular
+        id: snake
+        run: |
+          if [ ! -f out/snake-dark.svg ] || [ "${{ github.event_name }}" != "schedule" ] || [ "$(date -u +%H%M)" \< "0010" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Buat animasi ular
+        if: steps.snake.outputs.run == 'true'
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            out/snake.svg
+            out/snake-dark.svg?palette=github-dark&color_snake=#a78bfa&color_dots=#161b22,#2e1065,#5b21b6,#7c3aed,#c4b5fd
+
+      # Simpan ke branch "output" (1 commit saja, ditimpa terus agar riwayat tetap bersih)
+      - name: Publish ke branch output
+        run: |
+          cd out
+          git init -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Update dashboard $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" output
