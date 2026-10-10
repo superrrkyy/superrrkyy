@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2800&pause=700&color=A78BFA&center=true&vCenter=true&width=360&height=30&lines=Halo%2C+saya+AXRYZURE+%F0%9F%91%8B;React+%E2%80%A2+TypeScript+%E2%80%A2+Tailwind;Developer+axybot+%F0%9F%A4%96;Terus+belajar%2C+terus+membangun+%E2%9C%A8" alt="typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2800&pause=700&color=A78BFA&center=true&vCenter=true&width=340&height=30&lines=Halo%2C+saya+AXRYZURE+%F0%9F%91%8B;React+%E2%80%A2+TypeScript+%E2%80%A2+Tailwind;Developer+axybot+%F0%9F%A4%96;Terus+belajar%2C+terus+membangun+%E2%9C%A8" alt="typing" />
 </p>
 
 <p align="center">
@@ -40,6 +40,10 @@
 - 📚 Menulis **panduan coding** berbahasa Indonesia
 - 🎯 Sedang mendalami **Full-Stack Development**
 
+<p align="center">
+  <img src="https://img.shields.io/badge/🟢_Status-Sedang_membangun_proyek_baru-0d1117?style=flat-square&labelColor=0d1117&color=a78bfa" alt="status" />
+</p>
+
 ---
 
 ### 🛠️ Tech Stack
@@ -56,14 +60,16 @@
 
 ### 🌐 Website Live
 
-| | Website | Teknologi |
-|:-:|:--|:--|
-| ✦ | [**Portofolio**](https://superrrkyy.github.io/) | React · TypeScript · Tailwind |
-| 🛒 | [**AXRYZURE Store**](https://superrrkyy.github.io/axryzure-store/) | React · TypeScript · Framer Motion |
-| 🌌 | [**The Hystori Cosmic**](https://superrrkyy.github.io/axryzure-hystori-cosmic/) | HTML · CSS · JavaScript |
-| 🕌 | [**Maulid Nabi SAW**](https://superrrkyy.github.io/web-memperingati-maulid-nabi/) | HTML · CSS · JavaScript |
-| 🌦️ | [**CuacaKu**](https://superrrkyy.github.io/cuacaku/) | React · TypeScript · Tailwind |
-| 🎬 | [**AnimeKu**](https://superrrkyy.github.io/animeku/) | React · TypeScript · AniList API |
+<p align="center">
+  <a href="https://superrrkyy.github.io/"><img src="https://img.shields.io/badge/✦_Portofolio-React_·_TypeScript-a78bfa?style=flat-square&labelColor=0d1117" /></a>
+  <a href="https://superrrkyy.github.io/axryzure-store/"><img src="https://img.shields.io/badge/🛒_AXRYZURE_Store-React_·_Framer_Motion-a78bfa?style=flat-square&labelColor=0d1117" /></a>
+  <a href="https://superrrkyy.github.io/axryzure-hystori-cosmic/"><img src="https://img.shields.io/badge/🌌_Hystori_Cosmic-HTML_·_CSS_·_JS-a78bfa?style=flat-square&labelColor=0d1117" /></a>
+  <a href="https://superrrkyy.github.io/web-memperingati-maulid-nabi/"><img src="https://img.shields.io/badge/🕌_Maulid_Nabi_SAW-HTML_·_CSS_·_JS-a78bfa?style=flat-square&labelColor=0d1117" /></a>
+  <a href="https://superrrkyy.github.io/cuacaku/"><img src="https://img.shields.io/badge/🌦️_CuacaKu-React_·_TypeScript-a78bfa?style=flat-square&labelColor=0d1117" /></a>
+  <a href="https://superrrkyy.github.io/animeku/"><img src="https://img.shields.io/badge/🎬_AnimeKu-React_·_TypeScript-a78bfa?style=flat-square&labelColor=0d1117" /></a>
+  <a href="https://superrrkyy.github.io/cryptoku/"><img src="https://img.shields.io/badge/💰_CryptoKu-React_·_TypeScript-a78bfa?style=flat-square&labelColor=0d1117" /></a>
+  <a href="https://superrrkyy.github.io/nadaku/"><img src="https://img.shields.io/badge/🎵_NadaKu-React_·_Audius_·_iTunes-a78bfa?style=flat-square&labelColor=0d1117" /></a>
+</p>
 
 ---
 
@@ -72,6 +78,8 @@
 <p align="center">
   <a href="https://github.com/superrrkyy/axryzure-store"><img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=superrrkyy&repo=axryzure-store&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa" /></a>
   <a href="https://github.com/superrrkyy/axybot"><img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=superrrkyy&repo=axybot&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa" /></a>
+  <a href="https://github.com/superrrkyy/nadaku"><img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=superrrkyy&repo=nadaku&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa" /></a>
+  <a href="https://github.com/superrrkyy/cryptoku"><img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=superrrkyy&repo=cryptoku&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa" /></a>
   <a href="https://github.com/superrrkyy/flask-api-belajar"><img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=superrrkyy&repo=flask-api-belajar&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa" /></a>
 </p>
 
@@ -80,9 +88,6 @@
 <br>
 
 - 📱 [**termux-linux-distro-guide**](https://github.com/superrrkyy/termux-linux-distro-guide): Linux (Ubuntu, Debian, Arch, Kali) di Android
-- 🌐 [**panduan-web-development**](https://github.com/superrrkyy/panduan-web-development-): HTML, CSS & JS dari nol
-- 🤖 [**cara-membuat-bot-telegram**](https://github.com/superrrkyy/cara-membuat-bot-telegram-): bot Telegram langkah demi langkah
-- 🛡️ [**mengenal-link-phishing**](https://github.com/superrrkyy/mengenal-link-phising): edukasi keamanan digital
 - 💡 [**belajar-coding-dasar**](https://github.com/superrrkyy/belajar-coding-dasar): dasar coding & jenis error
 
 </details>
@@ -123,7 +128,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=3500&pause=1000&color=8B86A8&center=true&vCenter=true&width=360&height=22&lines=%22Code+is+like+humor.+When+you+have+to+explain+it%2C+it%E2%80%99s+bad.%22;%22First%2C+solve+the+problem.+Then%2C+write+the+code.%22;%22Belajar+hari+ini%2C+membangun+esok+hari.%22" alt="quotes" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=13&duration=3500&pause=1000&color=8B86A8&center=true&vCenter=true&width=340&height=22&lines=%22Code+is+like+humor.+When+you+have+to+explain+it%2C+it%E2%80%99s+bad.%22;%22First%2C+solve+the+problem.+Then%2C+write+the+code.%22;%22Belajar+hari+ini%2C+membangun+esok+hari.%22" alt="quotes" />
 </p>
 
 <p align="center">
