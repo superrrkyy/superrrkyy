@@ -63,6 +63,7 @@
 | 🌌 | [**The Hystori Cosmic**](https://superrrkyy.github.io/axryzure-hystori-cosmic/) | HTML · CSS · JavaScript |
 | 🕌 | [**Maulid Nabi SAW**](https://superrrkyy.github.io/web-memperingati-maulid-nabi/) | HTML · CSS · JavaScript |
 | 🌦️ | [**CuacaKu**](https://superrrkyy.github.io/cuacaku/) | React · TypeScript · Tailwind |
+| 🎬 | [**AnimeKu**](https://superrrkyy.github.io/animeku/) | React · TypeScript · AniList API |
 
 ---
 
