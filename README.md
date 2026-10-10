@@ -21,6 +21,11 @@
   <img src="https://img.shields.io/badge/Based%20in-Indonesia%20🇮🇩-7c3aed?style=flat-square" />
 </p>
 
+<!-- ======================= EMOJI MELAYANG ======================= -->
+<p align="center">
+  <img src="./assets/floating.svg" width="100%" alt="Emoji melayang" />
+</p>
+
 <!-- ======================= DASHBOARD (LIVE) ======================= -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/superrrkyy/superrrkyy/output/dashboard.svg" width="100%" alt="AXRYZURE Live Dashboard" />
@@ -99,6 +104,12 @@
 <p align="center">
   <img width="100%" src="https://github-readme-stats.vercel.app/api?username=superrrkyy&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa&rank_icon=github" />
   <img width="100%" src="https://streak-stats.demolab.com?user=superrrkyy&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=a78bfa&currStreakLabel=a78bfa" />
+</p>
+
+### 🧊 Kontribusi 3D
+
+<p align="center">
+  <img src="./profile-3d-contrib/profile-night-view.svg" width="100%" alt="Grafik kontribusi 3D" />
 </p>
 
 ### 🐍 Kontribusi
