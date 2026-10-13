@@ -35,6 +35,21 @@
 
 ---
 
+<details>
+<summary>🇬🇧 English summary</summary>
+
+**Hi, I'm AXRYZURE** 👋 — a web & bot developer from Indonesia 🇮🇩
+
+- **Web apps** with React, TypeScript, Vite and Tailwind CSS (8 live demos)
+- **Bots** — modular WhatsApp framework [`axybot`](https://github.com/superrrkyy/axybot)
+- **REST APIs** with Flask, Node.js, API-key auth and SQLite
+- **Guides in Indonesian** — Termux/proot-distro, coding basics for beginners
+
+📍 Portfolio: https://superrrkyy.github.io/ · 📫 iranassalam@gmail.com
+
+</details>
+
+
 ### 👋 Tentang Saya
 
 > **Web & Bot Developer** dari Indonesia yang suka membangun hal-hal berguna dan berbagi ilmu.
