@@ -1,0 +1,23 @@
+name: CI Profile README
+
+on:
+  push:
+    branches: [main]
+    paths: ['README.md', 'assets/**', 'scripts/**']
+  pull_request:
+    paths: ['README.md', 'assets/**', 'scripts/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Periksa Profile README
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/check_profile_readme.py
