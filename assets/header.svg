@@ -1,31 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="AXRYZURE — Web &amp; Bot Developer">
+  <title>AXRYZURE — Web &amp; Bot Developer</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f0c29"/><stop offset=".5" stop-color="#302b63"/><stop offset="1" stop-color="#24243e"/>
+      <stop offset="0" stop-color="#07051a"/>
+      <stop offset=".5" stop-color="#140f3d"/>
+      <stop offset="1" stop-color="#0b1222"/>
     </linearGradient>
-    <linearGradient id="txt" x1="0" x2="1">
-      <stop offset="0" stop-color="#c4b5fd"/><stop offset=".5" stop-color="#ffffff"/><stop offset="1" stop-color="#a78bfa"/>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c4b5fd"/>
+      <stop offset=".5" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#67e8f9"/>
+      <animate attributeName="x1" values="-1;1;-1" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;2;0" dur="9s" repeatCount="indefinite"/>
     </linearGradient>
-    <radialGradient id="glow"><stop offset="0" stop-color="#7c3aed" stop-opacity=".55"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0"/>
+      <stop offset=".9" stop-color="#a78bfa" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#67e8f9" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#a78bfa" opacity=".22"/>
+    </pattern>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="46"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="340" rx="26"/></clipPath>
   </defs>
-  <rect width="1200" height="300" fill="url(#bg)"/>
-  <circle cx="600" cy="130" r="260" fill="url(#glow)">
-    <animate attributeName="r" values="230;280;230" dur="6s" repeatCount="indefinite"/>
-  </circle>
-  <g fill="#fff">
-    <circle cx="120" cy="60" r="1.6"><animate attributeName="opacity" values="1;.2;1" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="260" cy="190" r="1.2"><animate attributeName="opacity" values=".2;1;.2" dur="4s" repeatCount="indefinite"/></circle>
-    <circle cx="420" cy="40" r="1.4"><animate attributeName="opacity" values="1;.3;1" dur="2.5s" repeatCount="indefinite"/></circle>
-    <circle cx="820" cy="70" r="1.6"><animate attributeName="opacity" values=".3;1;.3" dur="3.5s" repeatCount="indefinite"/></circle>
-    <circle cx="960" cy="200" r="1.2"><animate attributeName="opacity" values="1;.2;1" dur="4.5s" repeatCount="indefinite"/></circle>
-    <circle cx="1090" cy="50" r="1.5"><animate attributeName="opacity" values=".2;1;.2" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="700" cy="30" r="1.1"><animate attributeName="opacity" values="1;.3;1" dur="2.8s" repeatCount="indefinite"/></circle>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+
+    <!-- aurora -->
+    <g filter="url(#soft)">
+      <circle cx="220" cy="90" r="150" fill="#7c3aed" opacity=".42">
+        <animate attributeName="cx" values="220;300;220" dur="14s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="90;130;90" dur="11s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="990" cy="250" r="170" fill="#0891b2" opacity=".30">
+        <animate attributeName="cx" values="990;900;990" dur="16s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="620" cy="-10" r="170" fill="#db2777" opacity=".16">
+        <animate attributeName="r" values="150;190;150" dur="9s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- dotted grid -->
+    <rect width="1200" height="340" fill="url(#dots)"/>
+
+    <!-- scan line -->
+    <rect x="0" y="-80" width="1200" height="80" fill="url(#scan)">
+      <animate attributeName="y" values="-80;340" dur="6.5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- stars -->
+    <g fill="#ffffff">
+      <circle cx="70" cy="50" r="1.4"><animate attributeName="opacity" values="1;.2;1" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="160" cy="260" r="1.1"><animate attributeName="opacity" values=".2;1;.2" dur="4s" repeatCount="indefinite"/></circle>
+      <circle cx="310" cy="40" r="1.3"><animate attributeName="opacity" values="1;.3;1" dur="2.5s" repeatCount="indefinite"/></circle>
+      <circle cx="420" cy="300" r="1"><animate attributeName="opacity" values=".3;1;.3" dur="3.6s" repeatCount="indefinite"/></circle>
+      <circle cx="530" cy="46" r="1.2"><animate attributeName="opacity" values="1;.2;1" dur="2.2s" repeatCount="indefinite"/></circle>
+      <circle cx="680" cy="296" r="1.4"><animate attributeName="opacity" values=".2;1;.2" dur="3.8s" repeatCount="indefinite"/></circle>
+      <circle cx="790" cy="38" r="1.1"><animate attributeName="opacity" values="1;.3;1" dur="4.4s" repeatCount="indefinite"/></circle>
+      <circle cx="880" cy="290" r="1.3"><animate attributeName="opacity" values=".3;1;.3" dur="2.9s" repeatCount="indefinite"/></circle>
+      <circle cx="1010" cy="60" r="1.5"><animate attributeName="opacity" values="1;.2;1" dur="3.3s" repeatCount="indefinite"/></circle>
+      <circle cx="1120" cy="200" r="1.1"/>
+      <circle cx="1140" cy="110" r="1.3"><animate attributeName="opacity" values=".2;1;.2" dur="4.1s" repeatCount="indefinite"/></circle>
+      <circle cx="230" cy="150" r="1"><animate attributeName="opacity" values="1;.4;1" dur="5s" repeatCount="indefinite"/></circle>
+      <circle cx="960" cy="150" r="1"><animate attributeName="opacity" values=".4;1;.4" dur="2.7s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- shooting star -->
+    <line x1="0" y1="0" x2="70" y2="24" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;.05;.12;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x1" values="980;1180;1180" keyTimes="0;.12;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="30;80;80" keyTimes="0;.12;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1050;1250;1250" keyTimes="0;.12;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="54;104;104" keyTimes="0;.12;1" dur="8s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- floating code glyphs -->
+    <text x="92" y="210" font-size="96" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#a78bfa" opacity=".22">&lt;/&gt;
+      <animate attributeName="y" values="210;192;210" dur="7s" repeatCount="indefinite"/>
+    </text>
+    <text x="1080" y="236" font-size="84" font-family="Consolas, Menlo, monospace" font-weight="700" fill="#67e8f9" opacity=".2">{ }
+      <animate attributeName="y" values="236;218;236" dur="8.5s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- orbit -->
+    <ellipse cx="600" cy="176" rx="500" ry="118" fill="none" stroke="#a78bfa" stroke-opacity=".22" stroke-width="1.2" stroke-dasharray="4 8"/>
+    <circle r="6" fill="#67e8f9" filter="url(#glow)">
+      <animateMotion dur="12s" repeatCount="indefinite" path="M100,176 A500,118 0 1,0 1100,176 A500,118 0 1,0 100,176"/>
+    </circle>
+    <circle r="3.5" fill="#c4b5fd" filter="url(#glow)">
+      <animateMotion dur="12s" begin="-6s" repeatCount="indefinite" path="M100,176 A500,118 0 1,0 1100,176 A500,118 0 1,0 100,176"/>
+    </circle>
+
+    <!-- label -->
+    <text x="600" y="92" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="14" letter-spacing="6" fill="#a78bfa">✦ PORTFOLIO · 2026 ✦</text>
+
+    <!-- title glow + title -->
+    <text x="600" y="176" text-anchor="middle" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="88" font-weight="800" letter-spacing="12" fill="#7c3aed" opacity=".55" filter="url(#soft)">AXRYZURE</text>
+    <text x="600" y="176" text-anchor="middle" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="88" font-weight="800" letter-spacing="12" fill="url(#title)" filter="url(#glow)">AXRYZURE
+      <animate attributeName="opacity" values="0;1" dur="1.2s" fill="freeze"/>
+    </text>
+
+    <!-- subtitle -->
+    <text x="600" y="214" text-anchor="middle" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#c4b5fd" letter-spacing="2">Web &amp; Bot Developer · Indonesia</text>
+
+    <!-- pills -->
+    <g font-family="Consolas, Menlo, monospace" font-size="14" text-anchor="middle" fill="#e9d5ff">
+      <rect x="296" y="236" width="208" height="32" rx="16" fill="#1e1538" stroke="#a78bfa" stroke-opacity=".6"/>
+      <text x="400" y="257">⚛ React · TypeScript</text>
+      <rect x="496" y="236" width="208" height="32" rx="16" fill="#1e1538" stroke="#22d3ee" stroke-opacity=".6"/>
+      <text x="600" y="257">🤖 Bot · Automation</text>
+      <rect x="696" y="236" width="208" height="32" rx="16" fill="#1e1538" stroke="#a78bfa" stroke-opacity=".6"/>
+      <text x="800" y="257">🔌 Flask · Node.js</text>
+    </g>
+
+    <!-- bottom rule -->
+    <rect x="0" y="336" width="1200" height="4" fill="url(#rule)"/>
   </g>
-  <text x="600" y="140" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="96" font-weight="800" letter-spacing="10" fill="url(#txt)">AXRYZURE
-    <animate attributeName="opacity" values="0;1" dur="1.2s" fill="freeze"/>
-  </text>
-  <text x="600" y="190" text-anchor="middle" font-family="Consolas, Menlo, monospace" font-size="24" fill="#c4b5fd" letter-spacing="3">Web &amp; Bot Developer • Indonesia</text>
-  <path fill="#0d1117" d="M0 250 Q150 210 300 245 T600 245 T900 245 T1200 240 V300 H0Z">
-    <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0 250 Q150 210 300 245 T600 245 T900 245 T1200 240 V300 H0Z;M0 240 Q150 270 300 240 T600 250 T900 235 T1200 250 V300 H0Z;M0 250 Q150 210 300 245 T600 245 T900 245 T1200 240 V300 H0Z"/>
-  </path>
 </svg>
